@@ -113,8 +113,8 @@ function Portfolio() {
                             </span>
                         </div>
                         <div className="card-text">
-                            Making official Web Page of
-                            <strong>Promise</strong>,
+                            Making official Web Page of <strong>Promise</strong>
+                            ,
                             <br />
                             which is club of my high school.
                             <div className="card-footer">

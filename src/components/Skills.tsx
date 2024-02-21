@@ -95,7 +95,7 @@ function Skills() {
                         <div>
                             <img
                                 loading="lazy"
-                                src="img/Nextjs.svg"
+                                src="img/Nextjs.png"
                                 className="card-img"
                             />
                             <span className="card-title">
