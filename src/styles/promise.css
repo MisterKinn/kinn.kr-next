@@ -233,9 +233,3 @@ button {
 button:hover {
     background-color: blue;
 }
-
-@media (max-width: 850px) {
-    .title {
-        font-size: 2em;
-    }
-}

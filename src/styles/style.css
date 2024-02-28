@@ -127,6 +127,16 @@ body,
     }
 }
 
+.usa {
+    height: 1.2em;
+    width: auto;
+}
+
+.f1 {
+    height: 1em;
+    width: auto;
+}
+
 .toss {
     height: 2.75em;
     width: auto;

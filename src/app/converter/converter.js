@@ -25,7 +25,27 @@ async function updateExchangeRates() {
         const data = await response.json();
 
         if (data.rates) {
-            exchangeRates = data.rates;
+            // Filter desired currencies from the API response
+            const desiredCurrencies = [
+                "USD",
+                "KRW",
+                "AUD",
+                "BRL",
+                "CAD",
+                "CNY",
+                "EUR",
+                "GBP",
+                "JPY",
+                "MXN",
+                "PHP",
+            ];
+            const filteredRates = Object.fromEntries(
+                Object.entries(data.rates).filter(([currency]) =>
+                    desiredCurrencies.includes(currency)
+                )
+            );
+
+            exchangeRates = filteredRates;
             lastUpdateTime = Date.now();
             console.log("Exchange Rates Updated:", exchangeRates);
             displayLastUpdateTime();
@@ -61,7 +81,9 @@ async function getUserCountry() {
         const data = await response.json();
 
         if (data.country) {
-            return mapCountryCode(data.country);
+            return mapCountryCode(
+                document.querySelector("#fromCurrency").value
+            );
         } else {
             console.error("Failed to get user country:", data);
             return null;
@@ -73,7 +95,7 @@ async function getUserCountry() {
 }
 
 async function initialize() {
-    const defaultCurrency = await getUserCountry();
+    const defaultCurrency = "";
 
     if (defaultCurrency) {
         const fromCurrencyElement = document.querySelector("#fromCurrency");
@@ -134,8 +156,6 @@ async function convertCurrency(fromCurrency, toCurrency, amount) {
 
         const exchangeRate = calculateExchangeRate(fromCurrency, toCurrency);
         if (exchangeRate === null) {
-            console.log("Data:", exchangeRates);
-            displayErrorMessage("Unsupported Currency.");
             return;
         }
 

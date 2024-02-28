@@ -1,13 +1,17 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import {
-    exchangeRates,
-    convertCurrency,
-    getUserCountry,
-    mapCountryCode,
-} from "./converter";
-import Footer from "../../components/Footer";
+import { exchangeRates, convertCurrency, getUserCountry } from "./converter";
 import "../../styles/converter.css";
+
+import Head from "next/head";
+import TopBar from "../../components/machim/TopBar";
+import Home from "../../components/machim/Home";
+import About from "../../components/machim/AboutMachim";
+import Manage from "../../components/machim/Manage";
+import Utility from "../../components/machim/Utility";
+import Support from "../../components/machim/Support";
+import Banner from "../../components/home/Banner";
+import Footer from "../../components/home/Footer";
 
 function Converter() {
     const [fromCurrency, setFromCurrency] = useState("krw");

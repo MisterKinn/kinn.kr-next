@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import QRCode from "qrcode.react";
-import Footer from "../../components/Footer";
+import Footer from "../../components/home/Footer";
 import "../../styles/qr.css";
 
 interface HTMLCanvasElementWithToDataURL extends HTMLCanvasElement {
@@ -34,7 +34,6 @@ function QR() {
             downloadLink.click();
         }
     };
-
     return (
         <div className="page-container">
             <header className="header">

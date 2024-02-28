@@ -1,13 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { handleTitle } from "./handleTitle";
 import "../../styles/promise.css";
-import Footer from "../../components/Footer";
+import Footer from "../../components/home/Footer";
 
 function Promise() {
     const [imgSrc, setImgSrc] = useState("img/gmsh.png");
-    const [title, setTitle] = useState(
-        "당신도 무언가를\n상상해본 적이 있나요?"
-    );
 
     useEffect(() => {
         const handleResize = () => {
@@ -16,7 +14,15 @@ function Promise() {
             } else {
                 setImgSrc("img/gmsh.png");
             }
+            handleTitle();
         };
+
+        if (window.performance) {
+            if (performance.navigation.type === 1) {
+                // Detect Refresh
+                handleResize();
+            }
+        }
 
         window.addEventListener("resize", handleResize);
 
@@ -28,7 +34,7 @@ function Promise() {
             <header className="header">
                 <img src={imgSrc} alt="GMSH Promise" className="header-img" />
                 <div className="text-container">
-                    <h1 className="title">{title}</h1>
+                    <h1 className="title" />
                     <h2 className="sub-title">
                         우리는 상상을 현실로 구현합니다.
                         <br />

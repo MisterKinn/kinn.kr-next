@@ -2,25 +2,27 @@
 import "../../styles/style.css";
 
 import Head from "next/head";
-import TopBar from "../../components/TopBar";
-import Home from "../../components/Home";
-import AboutMe from "../../components/AboutMe";
-import Portfolio from "../../components/Portfolio";
-import Skills from "../../components/Skills";
-import Profile from "../../components/Profile";
-import Banner from "../../components/Banner";
-import Footer from "../../components/Footer";
+import TopBar from "../../components/home/TopBar";
+import Home from "../../components/home/Home";
+import AboutMe from "../../components/home/AboutMe";
+import Portfolio from "../../components/home/Portfolio";
+import Experience from "../../components/home/Experience";
+import Skills from "../../components/home/Skills";
+import Profile from "../../components/home/Profile";
+import Banner from "../../components/home/Banner";
+import Footer from "../../components/home/Footer";
 
 function Page() {
     return (
         <div>
             <Head>
-                <div></div>
+                <div />
             </Head>
             <TopBar />
             <Home />
             <AboutMe />
             <Portfolio />
+            <Experience />
             <Skills />
             <Profile />
             <Banner />
