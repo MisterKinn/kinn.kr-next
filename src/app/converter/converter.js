@@ -115,7 +115,9 @@ async function initialize() {
     }
 }
 
-window.addEventListener("load", initialize);
+if (typeof window !== "undefined") {
+    window.addEventListener("load", initialize);
+}
 
 function calculateExchangeRate(fromCurrency, toCurrency) {
     if (
