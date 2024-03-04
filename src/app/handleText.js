@@ -4,7 +4,7 @@ function handleAboutMe() {
 
     if (window.innerWidth < 850) {
         mottoElement.innerHTML =
-            '<strong>"The best way to predict<br />the future is to create it."</strong>';
+            '<strong>"The best way to<br />predict the future is to create it."</strong>';
         usaElement.innerHTML =
             "<strong>the United States<br />of America.</strong>";
     }

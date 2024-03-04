@@ -6,7 +6,7 @@ import styled from "styled-components";
 const MobileAboutMe = styled.div`
     @media only screen and (max-width: 800px) {
         p {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 `;
