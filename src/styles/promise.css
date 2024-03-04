@@ -73,11 +73,6 @@ body {
     color: #ffffff;
 }
 
-.scroll {
-    opacity: 0;
-    visibility: hidden;
-}
-
 .introduce {
     text-align: center;
     margin-top: 5em;

@@ -1,6 +1,19 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import "../../styles/style.css";
+import styled from "styled-components";
+
+const MobileHome = styled.div`
+    @media only screen and (max-width: 800px) {
+        .kinn {
+            font-size: 8em;
+        }
+
+        .introduce {
+            font-size: 2em;
+        }
+    }
+`;
 
 function Home() {
     const [imageSrc, setImageSrc] = useState("img/kinn-banner.png");
@@ -49,28 +62,30 @@ function Home() {
 
     return (
         <div id="home" className="body">
-            <img src={imageSrc} className="header-img" />
-            <div className="header-container">
-                <h2 className="hello">Hello, I'm</h2>
-                <h1 className="kinn">Kinn</h1>
-                <div>
-                    <div className="introduce">
-                        Nice to meet you!
-                        <img
-                            loading="lazy"
-                            draggable="false"
-                            src="img/wave.png"
-                            className="wave"
-                        />
+            <MobileHome>
+                <img src={imageSrc} className="header-img" />
+                <div className="header-container">
+                    <h2 className="hello">Hello, I'm</h2>
+                    <h1 className="kinn">Kinn</h1>
+                    <div>
+                        <div className="introduce">
+                            Nice to meet you!
+                            <img
+                                loading="lazy"
+                                draggable="false"
+                                src="img/wave.png"
+                                className="wave"
+                            />
+                        </div>
                     </div>
+                    <img
+                        loading="lazy"
+                        src="img/arrow.png"
+                        className="arrow"
+                        ref={arrowRef}
+                    />
                 </div>
-                <img
-                    loading="lazy"
-                    src="img/arrow.png"
-                    className="arrow"
-                    ref={arrowRef}
-                />
-            </div>
+            </MobileHome>
         </div>
     );
 }

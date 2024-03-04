@@ -21,7 +21,7 @@ function Footer() {
         <div id="footer" className="body">
             <p>
                 &copy; <span id="copyright-year" ref={yearRef} />{" "}
-                <strong>Kinn</strong>. All rights reserved.
+                <strong>Kinn</strong>. All Rights Reserved.
             </p>
         </div>
     );

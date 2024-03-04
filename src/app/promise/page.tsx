@@ -30,11 +30,15 @@ function Promise() {
     }, []);
 
     return (
-        <div>
+        <div className="">
             <header className="header">
                 <img src={imgSrc} alt="GMSH Promise" className="header-img" />
                 <div className="text-container">
-                    <h1 className="title" />
+                    <h1 className="title">
+                        당신도 무언가를
+                        <br />
+                        상상해본 적이 있나요?
+                    </h1>
                     <h2 className="sub-title">
                         우리는 상상을 현실로 구현합니다.
                         <br />
