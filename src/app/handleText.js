@@ -1,3 +1,15 @@
+function handleAboutMe() {
+    const mottoElement = document.querySelector(".motto-text");
+    const usaElement = document.querySelector(".usa-element");
+
+    if (window.innerWidth < 850) {
+        mottoElement.innerHTML =
+            '<strong>"The best way to predict<br />the future is to create it."</strong>';
+        usaElement.innerHTML =
+            "<strong>the United States<br />of America.</strong>";
+    }
+}
+
 function handlePortfolio() {
     const ileonangElement = document.querySelector(".ileonang-element");
     const qrElement = document.querySelector(".qr-element");
@@ -25,4 +37,4 @@ function handleExperience() {
     }
 }
 // 포폴.tsx에 resize나 load 감지해서 handlePortfolio() 실행시키는 코드 넣기
-export { handlePortfolio, handleExperience };
+export { handleAboutMe, handlePortfolio, handleExperience };

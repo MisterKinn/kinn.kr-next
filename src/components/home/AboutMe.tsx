@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import "../../styles/style.css";
+import { handleAboutMe } from "../../app/handleText.js";
 import styled from "styled-components";
 
 const MobileAboutMe = styled.div`
@@ -10,6 +12,22 @@ const MobileAboutMe = styled.div`
 `;
 
 function AboutMe() {
+    useEffect(() => {
+        handleAboutMe();
+
+        if (window.performance) {
+            if (performance.navigation.type === 1) {
+                // Detect Refresh
+                handleAboutMe();
+            }
+        }
+        window.addEventListener("resize", handleAboutMe);
+
+        return () => {
+            window.removeEventListener("resize", handleAboutMe);
+        };
+    });
+
     return (
         <div id="AboutMe" className="body">
             <MobileAboutMe>
@@ -37,11 +55,13 @@ function AboutMe() {
                     <strong>.</strong>
                     <br />
                     My motto is{" "}
-                    <strong>
-                        "The best way to predict
-                        <br />
-                        the future is to create it."
-                    </strong>
+                    <span className="motto-text">
+                        <strong>
+                            "The best way to predict the future
+                            <br />
+                            is to create it."
+                        </strong>
+                    </span>
                     <br />
                     I'm Junior of high school, and <br />
                     I'm dreaming of working at{" "}
@@ -58,7 +78,9 @@ function AboutMe() {
                         />
                     </a>
                     <br />& being citizen of{" "}
-                    <strong>the United States of America.</strong>
+                    <span className="usa-element">
+                        <strong>the United States of America.</strong>
+                    </span>
                 </p>
             </MobileAboutMe>
         </div>

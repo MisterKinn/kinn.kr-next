@@ -12,6 +12,10 @@ const MobileHome = styled.div`
         .introduce {
             font-size: 2em;
         }
+
+        .wave {
+            margin-top: -1em;
+        }
     }
 `;
 

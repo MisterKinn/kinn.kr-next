@@ -43,6 +43,18 @@ const MobileBox = styled.div`
 function Portfolio() {
     useEffect(() => {
         handlePortfolio();
+
+        if (window.performance) {
+            if (performance.navigation.type === 1) {
+                // Detect Refresh
+                handlePortfolio();
+            }
+        }
+        window.addEventListener("resize", handlePortfolio);
+
+        return () => {
+            window.removeEventListener("resize", handlePortfolio);
+        };
     });
 
     return (
