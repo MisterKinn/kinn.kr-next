@@ -1,11 +1,17 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import AOS from "aos";
+import "../styles/aos.css";
 import "../styles/style.css";
 
 function Home() {
     const [imageSrc, setImageSrc] = useState("img/kinn-banner.png");
 
     useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+
         const handleResize = () => {
             const width = window.innerWidth;
             if (width <= 1000) {
@@ -48,10 +54,10 @@ function Home() {
     }, [arrowRef, scrollDown]);
 
     return (
-        <div id="home" className="body">
+        <div id="home" className="body" data-aos="fade-up">
             <img src={imageSrc} className="header-img" />
             <div className="header-container">
-                <h2 className="hello">Hello, I'm</h2>
+                <h2 className="hello" data-aos="fade-up">Hello, I'm</h2>
                 <h1 className="kinn">Kinn</h1>
                 <div>
                     <div className="introduce">

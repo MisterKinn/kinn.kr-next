@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { handleTitle } from "./handleTitle";
+import AOS from "aos";
+import "../../styles/aos.css";
 import "../../styles/promise.css";
 import Footer from "../../components/home/Footer";
 
@@ -8,6 +10,10 @@ function Promise() {
     const [imgSrc, setImgSrc] = useState("img/gmsh.png");
 
     useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+
         const handleResize = () => {
             if (window.innerWidth < 850) {
                 setImgSrc("img/gmsh-mobile.png");
@@ -30,16 +36,16 @@ function Promise() {
     }, []);
 
     return (
-        <div className="">
+        <div>
             <header className="header">
                 <img src={imgSrc} alt="GMSH Promise" className="header-img" />
                 <div className="text-container">
-                    <h1 className="title">
+                    <h1 className="title" data-aos="fade-up">
                         당신도 무언가를
                         <br />
                         상상해본 적이 있나요?
                     </h1>
-                    <h2 className="sub-title">
+                    <h2 className="sub-title" data-aos="fade-up">
                         우리는 상상을 현실로 구현합니다.
                         <br />
                         <strong>Promise</strong>는 교내 유일 웹 개발
@@ -47,19 +53,19 @@ function Promise() {
                         <strong>Promise</strong>와 함께라면 당신의 상상은 현실이
                         됩니다.
                     </h2>
-                    <button className="join">동아리 지원하기</button>
+                    <button className="join" data-aos="fade-up">동아리 지원하기</button>
                 </div>
             </header>
 
-            <h2 className="introduce">소개</h2>
-            <p className="">
+            <h2 className="introduce" data-aos="fade-up">소개</h2>
+            <p data-aos="fade-up">
                 <strong>Promise</strong>는 교내 유일 웹 개발 동아리이며, <br />
                 웹과 서버 개발을 배우고 함께 실습하며 <br />웹 개발자로서의
                 역량을 쌓아나가는 동아리입니다.
             </p>
 
-            <h2 className="introduce">커리큘럼</h2>
-            <div className="container">
+            <h2 className="introduce" data-aos="fade-up">커리큘럼</h2>
+            <div className="container" data-aos="fade-up">
                 <div className="card-container">
                     <div>
                         <img
@@ -96,7 +102,7 @@ function Promise() {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container" data-aos="fade-up">
                 <div className="card-container">
                     <div>
                         <img
@@ -133,15 +139,15 @@ function Promise() {
                 </div>
             </div>
 
-            <h2 className="introduce">프로젝트</h2>
-            <p className="">
+            <h2 className="introduce" data-aos="fade-up">프로젝트</h2>
+            <p data-aos="fade-up">
                 아직까지 개발된 프로젝트가 없습니다.
                 <br />
                 동아리에 가입하셔서 첫 프로젝트를 함께 만들어보세요!
             </p>
 
-            <h2 className="introduce">문의</h2>
-            <div className="container">
+            <h2 className="introduce" data-aos="fade-up">문의</h2>
+            <div className="container" data-aos="fade-up">
                 <a
                     href="mailto:promise@kinn.kr"
                     target="_blank"
@@ -185,7 +191,7 @@ function Promise() {
                 </a>
             </div>
 
-            <a href="https://kinn.kr/" target="_blank" title="Kinn's Lounge">
+            <a href="https://kinn.kr/" target="_blank" title="Kinn's Lounge" data-aos="fade-up">
                 <img
                     src="img/kinn-banner.png"
                     alt="Kinn's Lounge"
