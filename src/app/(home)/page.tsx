@@ -1,8 +1,5 @@
 "use client";
-import React, { useEffect } from 'react';
 import "../../styles/style.css";
-import AOS from "aos";
-import "../../styles/aos.css";
 
 import Head from "next/head";
 import TopBar from "../../components/home/TopBar";
@@ -16,12 +13,6 @@ import Banner from "../../components/home/Banner";
 import Footer from "../../components/home/Footer";
 
 function Page() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000
-        });
-    }, []);
-    
     return (
         <div>
             <Head>

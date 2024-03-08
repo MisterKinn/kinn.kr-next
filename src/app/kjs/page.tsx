@@ -151,6 +151,46 @@ function Kjs() {
                             </div>
                         </div>
                     </a>
+
+                    <a
+                        href="kjs/5.pdf"
+                        download="김진성 IMPACTHON 노근"
+                        target="_blank"
+                        title="김진성 IMPACTHON 노근"
+                        className="spec"
+                    >
+                        <div className="card-container">
+                            <div>
+                                <img
+                                    loading="lazy"
+                                    src="img/no-gun.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>실버세대를 위한 커뮤니티</strong>
+                                </span>
+                            </div>
+                            <div className="card-text">
+                                외출을 잘 안하시는 노인분들, 독거노인 분들의
+                                문제를 해결하기 위해 실버타운이라는 방안이
+                                있지만 이용하시기엔 월 100만원이 넘는 금액을
+                                지불해야 했다 또한 노인들 마다도 외출의 양극화가
+                                심하기에 외출빈도가 낮은 노인들이 쉽게 접근할 수
+                                있는, 심리적인 허들을 없앨 수 있도록 서비스를
+                                만들었다. 초반엔 오프라인으로 탑골공원, 지하철역
+                                같은 노인들이 많은 곳에 가서 외출빈도가 높은
+                                노인들을 상대로 하여 그들의 1차 바이럴로
+                                외출빈도가 낮은 노인분들을 끌어들일 수 있을
+                                것이다. 노인의 자녀분들의 도움을 받아 하는
+                                방법도 있을 것이다. BM은 핀광고나, 데이터 판매로
+                                잡았는데 피드백 후에 보험관련 상품을 연결하는
+                                플랫폼 역할을 해서 수수료를 받는 BM도
+                                좋아보였다. 처음 실버시장을 공략해서 프로덕트를
+                                만들었는데 나름 성공적이었던거 같고 새로운
+                                시야를 얻은 것 같다.
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 

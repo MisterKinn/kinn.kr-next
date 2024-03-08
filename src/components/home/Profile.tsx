@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import "../../styles/style.css";
+import AOS from "aos";
+import "../../styles/aos.css";
 import styled from "styled-components";
 
 const MobileList = styled.div`
@@ -11,9 +14,15 @@ const MobileList = styled.div`
 `;
 
 function Profile() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
+
     return (
         <div id="Profile" className="body">
-            <MobileList>
+            <MobileList data-aos="fade-up">
                 <h2 id="Profile" className="list">
                     Profile
                 </h2>

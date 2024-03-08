@@ -36,5 +36,17 @@ function handleExperience() {
             "Got a <strong>Grand Prize</strong> at <strong>Highthon</strong>,<br />which is hackathon<br />of high school student.";
     }
 }
+
+function handlePromise() {
+    const titleElement = document.querySelector(".title");
+    const subTitleElement = document.querySelector(".sub-title");
+
+    if (window.innerWidth < 850) {
+        titleElement.innerHTML =
+            "당신도 무언가를<br />상상해본 적이<br />있나요?";
+        subTitleElement.innerHTML =
+            "우리는 상상을<br />현실로 구현합니다.<br /><strong>Promise</strong>는 교내 유일<br />웹 개발 동아리입니다.<br /><strong>Promise</strong>와 함께라면<br />당신의 상상은 현실이 됩니다.";
+    }
+}
 // 포폴.tsx에 resize나 load 감지해서 handlePortfolio() 실행시키는 코드 넣기
-export { handleAboutMe, handlePortfolio, handleExperience };
+export { handleAboutMe, handlePortfolio, handleExperience, handlePromise };

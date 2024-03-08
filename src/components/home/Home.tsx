@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import "../../styles/style.css";
+import AOS from "aos";
+import "../../styles/aos.css";
 import styled from "styled-components";
 
 const MobileHome = styled.div`
@@ -21,6 +23,12 @@ const MobileHome = styled.div`
 
 function Home() {
     const [imageSrc, setImageSrc] = useState("img/kinn-banner.png");
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -69,8 +77,12 @@ function Home() {
             <MobileHome>
                 <img src={imageSrc} className="header-img" />
                 <div className="header-container">
-                    <h2 className="hello">Hello, I'm</h2>
-                    <h1 className="kinn">Kinn</h1>
+                    <h2 className="hello" data-aos="fade-up">
+                        Hello, I'm
+                    </h2>
+                    <h1 className="kinn" data-aos="fade-up">
+                        Kinn
+                    </h1>
                     <div>
                         <div className="introduce">
                             Nice to meet you!

@@ -1,17 +1,25 @@
 import { useEffect } from "react";
 import "../../styles/style.css";
+import AOS from "aos";
+import "../../styles/aos.css";
 import { handleAboutMe } from "../../app/handleText.js";
 import styled from "styled-components";
 
 const MobileAboutMe = styled.div`
     @media only screen and (max-width: 800px) {
-        p {
-            font-size: 18px;
+        .aboutme-text {
+            font-size: 20px;
         }
     }
 `;
 
 function AboutMe() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
+
     useEffect(() => {
         handleAboutMe();
 
@@ -30,9 +38,9 @@ function AboutMe() {
 
     return (
         <div id="AboutMe" className="body">
-            <MobileAboutMe>
+            <MobileAboutMe data-aos="fade-up">
                 <h1 className="AboutMe">About Me</h1>
-                <p>
+                <p className="aboutme-text">
                     I'm <strong>SeongYeon Kim</strong> (a.k.a.
                     <strong>Kinn</strong>),
                     <br />

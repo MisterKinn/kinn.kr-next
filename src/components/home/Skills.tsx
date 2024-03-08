@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import "../../styles/style.css";
+import AOS from "aos";
+import "../../styles/aos.css";
 import styled from "styled-components";
 
 const MobileList = styled.div`
@@ -11,9 +14,15 @@ const MobileList = styled.div`
 `;
 
 function Skills() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
+
     return (
         <div id="Skills" className="body">
-            <MobileList>
+            <MobileList data-aos="fade-up">
                 <h2 className="list">Skills</h2>
                 <div className="container">
                     <div className="spec">
@@ -79,6 +88,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
+
                 <div className="container scoll">
                     <div className="spec">
                         <div className="card-container spec2">

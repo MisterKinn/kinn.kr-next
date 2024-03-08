@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import "../../styles/style.css";
+import AOS from "aos";
+import "../../styles/aos.css";
 import { handlePortfolio } from "../../app/handleText.js";
 import styled from "styled-components";
 
@@ -42,6 +44,12 @@ const MobileBox = styled.div`
 
 function Portfolio() {
     useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
+
+    useEffect(() => {
         handlePortfolio();
 
         if (window.performance) {
@@ -59,7 +67,7 @@ function Portfolio() {
 
     return (
         <div id="Portfolio" className="body">
-            <MobileBox>
+            <MobileBox data-aos="fade-up">
                 <h2 className="list">Portfolio</h2>
 
                 <div className="container">
