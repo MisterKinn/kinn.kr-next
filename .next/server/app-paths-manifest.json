@@ -1,6 +1,5 @@
 {
-  "/(home)/page": "app/(home)/page.js",
+  "/not-found": "app/not-found.js",
   "/promise/page": "app/promise/page.js",
-  "/kjs/page": "app/kjs/page.js",
-  "/machim/page": "app/machim/page.js"
+  "/kjs/page": "app/kjs/page.js"
 }

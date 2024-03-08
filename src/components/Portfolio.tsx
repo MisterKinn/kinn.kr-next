@@ -105,11 +105,11 @@ function Portfolio() {
                         <div>
                             <img
                                 loading="lazy"
-                                src="img/Promise.webp"
+                                src="img/road-map.png"
                                 className="card-img"
                             />
                             <span className="card-title">
-                                <strong>Promise</strong>
+                                <strong>RoadMap</strong>
                             </span>
                         </div>
                         <div className="card-text">

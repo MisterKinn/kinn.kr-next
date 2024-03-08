@@ -6,11 +6,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(home)/page": [
+    "/promise/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(home)/page.css",
-      "static/chunks/app/(home)/page.js"
+      "static/css/app/promise/layout.css",
+      "static/chunks/app/promise/layout.js"
     ],
     "/promise/page": [
       "static/chunks/webpack.js",
@@ -18,11 +18,11 @@
       "static/css/app/promise/page.css",
       "static/chunks/app/promise/page.js"
     ],
-    "/promise/layout": [
+    "/kjs/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/promise/layout.css",
-      "static/chunks/app/promise/layout.js"
+      "static/css/app/kjs/layout.css",
+      "static/chunks/app/kjs/layout.js"
     ],
     "/kjs/page": [
       "static/chunks/webpack.js",
@@ -30,23 +30,10 @@
       "static/css/app/kjs/page.css",
       "static/chunks/app/kjs/page.js"
     ],
-    "/kjs/layout": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/kjs/layout.css",
-      "static/chunks/app/kjs/layout.js"
-    ],
-    "/machim/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/machim/page.css",
-      "static/chunks/app/machim/page.js"
-    ],
-    "/machim/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/machim/layout.css",
-      "static/chunks/app/machim/layout.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

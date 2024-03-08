@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { handlePromise } from "../handleText.js";
+import { handleRoadMap } from "../handleText.js";
 import AOS from "aos";
 import "../../styles/aos.css";
-import "../../styles/promise.css";
+import "../../styles/roadmap.css";
 import Banner from "../../components/home/Banner";
 import Footer from "../../components/home/Footer";
 
-function Promise() {
+function RoadMap() {
     const [imgSrc, setImgSrc] = useState("img/gmsh.png");
 
     useEffect(() => {
@@ -21,7 +21,7 @@ function Promise() {
             } else {
                 setImgSrc("img/gmsh.png");
             }
-            handlePromise();
+            handleRoadMap();
         };
 
         if (window.performance) {
@@ -39,7 +39,7 @@ function Promise() {
     return (
         <div>
             <header className="header">
-                <img src={imgSrc} alt="GMSH Promise" className="header-img" />
+                <img src={imgSrc} alt="GMSH RoadMap" className="header-img" />
                 <div className="text-container">
                     <h1 className="title" data-aos="fade-up">
                         당신도 무언가를
@@ -49,9 +49,9 @@ function Promise() {
                     <h2 className="sub-title" data-aos="fade-up">
                         우리는 상상을 현실로 구현합니다.
                         <br />
-                        <strong>Promise</strong>는 교내 유일 웹 개발
+                        <strong>RoadMap</strong>은 교내 유일 웹 개발
                         동아리입니다. <br />
-                        <strong>Promise</strong>와 함께라면 당신의 상상은 현실이
+                        <strong>RoadMap</strong>과 함께라면 당신의 상상은 현실이
                         됩니다.
                     </h2>
                     <button className="join" data-aos="fade-up">
@@ -64,7 +64,7 @@ function Promise() {
                 소개
             </h2>
             <p className="intro-text" data-aos="fade-up">
-                <strong>Promise</strong>는 교내 유일 웹 개발 동아리이며, <br />
+                <strong>RoadMap</strong>은 교내 유일 웹 개발 동아리이며, <br />
                 웹과 서버 개발을 배우고 함께 실습하며 <br />웹 개발자로서의
                 역량을 쌓아나가는 동아리입니다.
             </p>
@@ -165,7 +165,7 @@ function Promise() {
             <div data-aos="fade-up">
                 <div className="container">
                     <a
-                        href="mailto:promise@kinn.kr"
+                        href="mailto:RoadMap@kinn.kr"
                         target="_blank"
                         title="Mail"
                         className="no-deco"
@@ -181,14 +181,14 @@ function Promise() {
                                     <strong>Mail</strong>
                                 </span>
                             </div>
-                            <div className="card-footer">promise@kinn.kr</div>
+                            <div className="card-footer">roadmap@kinn.kr</div>
                         </div>
                     </a>
                 </div>
 
                 <div className="container">
                     <a
-                        href="https://www.instagram.com/gmsh_promise"
+                        href="https://www.instagram.com/gmsh_RoadMap"
                         target="_blank"
                         title="Instagram"
                         className="no-deco"
@@ -204,7 +204,7 @@ function Promise() {
                                     <strong>Instagram</strong>
                                 </span>
                             </div>
-                            <div className="card-footer">gmsh_promise</div>
+                            <div className="card-footer">gmsh_roadmap</div>
                         </div>
                     </a>
                 </div>
@@ -219,4 +219,4 @@ function Promise() {
     );
 }
 
-export default Promise;
+export default RoadMap;

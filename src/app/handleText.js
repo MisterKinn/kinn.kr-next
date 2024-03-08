@@ -14,7 +14,7 @@ function handlePortfolio() {
     const ileonangElement = document.querySelector(".ileonang-element");
     const qrElement = document.querySelector(".qr-element");
     const converterElement = document.querySelector(".converter-element");
-    const promiseElement = document.querySelector(".promise-element");
+    const RoadMapElement = document.querySelector(".RoadMap-element");
 
     if (window.innerWidth < 850) {
         ileonangElement.innerHTML =
@@ -23,8 +23,8 @@ function handlePortfolio() {
             "Making a <strong>QR Code Generate<br />Service</strong>, which generates<br />& downloads QR Code.";
         converterElement.innerHTML =
             "Making an <strong>Exchange Rate Conversion Service</strong>, which<br />calculates by actual exchange rate.";
-        promiseElement.innerHTML =
-            "Making official Web Page of <strong>Promise</strong>, which is club<br />of my high school.";
+        RoadMapElement.innerHTML =
+            "Making official Web Page of <strong>RoadMap</strong>, which is Web Club<br />of my high school.";
     }
 }
 
@@ -37,7 +37,7 @@ function handleExperience() {
     }
 }
 
-function handlePromise() {
+function handleRoadMap() {
     const titleElement = document.querySelector(".title");
     const subTitleElement = document.querySelector(".sub-title");
 
@@ -45,8 +45,8 @@ function handlePromise() {
         titleElement.innerHTML =
             "당신도 무언가를<br />상상해본 적이<br />있나요?";
         subTitleElement.innerHTML =
-            "우리는 상상을<br />현실로 구현합니다.<br /><strong>Promise</strong>는 교내 유일<br />웹 개발 동아리입니다.<br /><strong>Promise</strong>와 함께라면<br />당신의 상상은 현실이 됩니다.";
+            "우리는 상상을<br />현실로 구현합니다.<br /><strong>RoadMap</strong>은 교내 유일<br />웹 개발 동아리입니다.<br /><strong>RoadMap</strong>과 함께라면<br />당신의 상상은 현실이 됩니다.";
     }
 }
 // 포폴.tsx에 resize나 load 감지해서 handlePortfolio() 실행시키는 코드 넣기
-export { handleAboutMe, handlePortfolio, handleExperience, handlePromise };
+export { handleAboutMe, handlePortfolio, handleExperience, handleRoadMap };
