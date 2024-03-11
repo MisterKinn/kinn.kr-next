@@ -142,8 +142,8 @@ async function convertCurrency(fromCurrency, toCurrency, amount) {
         return;
     }
 
-    fromCurrency = fromCurrency.toUpperCase();
-    toCurrency = toCurrency.toUpperCase();
+    fromCurrency = String(fromCurrency).toUpperCase();
+    toCurrency = String(toCurrency).toUpperCase();
     amount = parseFloat(amount);
 
     if (!amount) {

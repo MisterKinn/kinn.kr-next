@@ -4,8 +4,8 @@ import "../../styles/machim.css";
 function Home() {
     return (
         <div id="home" className="body">
-            <h1 id="hello-world">Machim Help</h1>
-            <div className="blank"></div>
+            <h1 className="hello-world">Machim Help</h1>
+            <div className="space"></div>
 
             <div className="center">
                 <button

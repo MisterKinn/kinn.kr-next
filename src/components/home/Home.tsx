@@ -7,12 +7,16 @@ import styled from "styled-components";
 
 const MobileHome = styled.div`
     @media only screen and (max-width: 800px) {
+        .hello {
+            font-size: 1.6em;
+        }
+
         .kinn {
-            font-size: 8em;
+            font-size: 6em;
         }
 
         .introduce {
-            font-size: 2em;
+            font-size: 1.8em;
         }
 
         .wave {

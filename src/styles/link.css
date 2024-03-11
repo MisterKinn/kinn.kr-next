@@ -97,6 +97,14 @@ body {
     color: #5d3fd3;
 }
 
+.spec2 {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    height: 3em;
+    width: 7em;
+}
+
 .banner {
     height: 30%;
     width: 30%;

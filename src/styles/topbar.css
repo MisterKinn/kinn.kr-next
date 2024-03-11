@@ -54,8 +54,7 @@ body {
 }
 
 @media (max-width: 900px) {
-    .topba {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    .topbar {
+        display: none;
     }
 }

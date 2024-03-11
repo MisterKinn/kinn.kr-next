@@ -1,5 +1,5 @@
 "use client";
-import "../../styles/style.css";
+import "../../styles/machim.css";
 
 import Head from "next/head";
 import TopBar from "../../components/machim/TopBar";

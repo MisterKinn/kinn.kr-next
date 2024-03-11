@@ -271,3 +271,17 @@ p {
     font-size: 25px;
     color: grey;
 }
+
+@media (max-width: 800px) {
+    .name {
+        font-size: 5em;
+    }
+
+    .introduce {
+        font-size: 2.3em;
+    }
+
+    .about-me {
+        font-size: 20px;
+    }
+}

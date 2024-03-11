@@ -9,7 +9,7 @@ body {
     scroll-behavior: smooth;
 }
 
-#hello-world {
+.hello-world {
     width: 100%;
     height: 100px;
     padding: 2px;
@@ -20,8 +20,8 @@ body {
     color: white;
 }
 
-.blank {
-    margin-top: 10em;
+.space {
+    margin: 5em;
 }
 
 .banner {
@@ -125,4 +125,30 @@ body {
 .card-footer {
     font-size: 17px;
     color: white;
+}
+
+.spec {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.spec2 {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    height: 10em;
+    width: 7em;
+}
+
+@media only screen and (max-width: 800px) {
+    .hello-world {
+        font-size: 80px;
+    }
+
+    .card-container {
+        height: 5em;
+        width: 5em;
+        margin-top: -1.5em;
+    }
 }

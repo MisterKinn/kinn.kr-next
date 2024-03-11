@@ -23,22 +23,6 @@ const MobileBox = styled.div`
             width: 8em;
             margin-top: -1.5em;
         }
-
-        .card-title {
-            font-size: 22px;
-        }
-
-        .card-text {
-            font-size: 0.45em;
-        }
-
-        .converter {
-            font-size: 0.6em;
-        }
-
-        .card-footer {
-            font-size: 14px;
-        }
     }
 `;
 
@@ -72,6 +56,40 @@ function Portfolio() {
 
                 <div className="container">
                     <a
+                        href="https://gmsh.kr"
+                        target="_blank"
+                        title="RoadMap"
+                        className="spec"
+                    >
+                        <div className="card-container">
+                            <div>
+                                <img
+                                    loading="lazy"
+                                    src="img/road-map.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>RoadMap</strong>
+                                </span>
+                            </div>
+                            <div className="card-text">
+                                <span className="roadmap-element">
+                                    Operating <strong>RoadMap</strong>
+                                    ,
+                                    <br />
+                                    which is Web Club of my high school.
+                                </span>
+                                <div className="card-footer">
+                                    <strong>
+                                        <br />
+                                        24. 03. 08~
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a
                         href=" "
                         target="_blank"
                         title="Ileonang"
@@ -96,7 +114,7 @@ function Portfolio() {
                                 </span>
                                 <div className="card-footer">
                                     <br />
-                                    <strong>24. 02. 17~24. 02. 18.</strong>
+                                    <strong>24. 02. 17 ~ 24. 02. 18.</strong>
                                 </div>
                             </div>
                         </div>
@@ -175,9 +193,9 @@ function Portfolio() {
                     </a>
 
                     <a
-                        href="/promise"
+                        href="https://gmsh.kr"
                         target="_blank"
-                        title="Promise"
+                        title="RoadMap"
                         className="spec"
                     >
                         <div className="card-container">
@@ -192,17 +210,15 @@ function Portfolio() {
                                 </span>
                             </div>
                             <div className="card-text">
-                                <span className="promise-element">
-                                    Making official Web Page of{" "}
-                                    <strong>Promise</strong>
-                                    ,
-                                    <br />
-                                    which is club of my high school.
-                                </span>
+                                Made a official Web Page{" "}
+                                <strong>Promise</strong>
+                                ,
+                                <br />
+                                which was Web Club of my high school.
                                 <div className="card-footer">
                                     <strong>
                                         <br />
-                                        23. 11. 06~
+                                        23. 11. 06 ~ 24. 03. 07.
                                     </strong>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@ function handlePortfolio() {
     const ileonangElement = document.querySelector(".ileonang-element");
     const qrElement = document.querySelector(".qr-element");
     const converterElement = document.querySelector(".converter-element");
-    const RoadMapElement = document.querySelector(".RoadMap-element");
+    const RoadMapElement = document.querySelector(".roadmap-element");
 
     if (window.innerWidth < 850) {
         ileonangElement.innerHTML =
@@ -24,7 +24,7 @@ function handlePortfolio() {
         converterElement.innerHTML =
             "Making an <strong>Exchange Rate Conversion Service</strong>, which<br />calculates by actual exchange rate.";
         RoadMapElement.innerHTML =
-            "Making official Web Page of <strong>RoadMap</strong>, which is Web Club<br />of my high school.";
+            "Operating <strong>RoadMap</strong>, which is<br />Web Club of my high school.";
     }
 }
 
@@ -37,16 +37,28 @@ function handleExperience() {
     }
 }
 
-function handleRoadMap() {
-    const titleElement = document.querySelector(".title");
-    const subTitleElement = document.querySelector(".sub-title");
+function handleAboutMachim() {
+    const aboutMachimElement = document.querySelector(".about-machim");
 
     if (window.innerWidth < 850) {
-        titleElement.innerHTML =
-            "당신도 무언가를<br />상상해본 적이<br />있나요?";
-        subTitleElement.innerHTML =
-            "우리는 상상을<br />현실로 구현합니다.<br /><strong>RoadMap</strong>은 교내 유일<br />웹 개발 동아리입니다.<br /><strong>RoadMap</strong>과 함께라면<br />당신의 상상은 현실이 됩니다.";
+        aboutMachimElement.innerHTML =
+            "<strong>.마침이</strong>는 <strong>Kinn</strong>이 개발한<br />Discord Bot 입니다. <br /> <strong>.마침이</strong>는 당신의 Discord<br />Server를 <strong>관리</strong>할 수 있으며, <br /> <strong>유틸리티</strong> 기능 또한 있어 최고의<br />Discord Bot 사용 경험을 제공합니다. <br /> 다재다능한 Discord Bot, <strong>.마침이</strong>를<br />지금 당신의 서버에서 사용해보세요!";
     }
 }
-// 포폴.tsx에 resize나 load 감지해서 handlePortfolio() 실행시키는 코드 넣기
-export { handleAboutMe, handlePortfolio, handleExperience, handleRoadMap };
+
+function handleKjs() {
+    const aboutMeElement = document.querySelector(".about-me");
+
+    if (window.innerWidth < 850) {
+        aboutMeElement.innerHTML =
+            "저는 <strong>김진성</strong>이고, 학생 <strong>Prouct<br />Manager</strong>입니다. <br /> 저는 미래 세상의 패러다임에<br />혁신을 주는 프로덕트를 만들 것이고, <br />제 프로덕트를 발전시키기 위해<br />많은 노력을 기울이고 있습니다.";
+    }
+}
+
+export {
+    handleAboutMe,
+    handlePortfolio,
+    handleExperience,
+    handleAboutMachim,
+    handleKjs,
+};
