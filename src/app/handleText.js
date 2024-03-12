@@ -33,7 +33,7 @@ function handleExperience() {
 
     if (window.innerWidth < 850) {
         highthonElement.innerHTML =
-            "Got a <strong>Grand Prize</strong> at <strong>Highthon</strong>,<br />which is hackathon<br />of high school student.";
+            "Got a <strong>Grand Prize</strong> at <strong>Highthon</strong>, which is hackathon<br />of high school student.";
     }
 }
 
