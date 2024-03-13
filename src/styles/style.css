@@ -61,7 +61,7 @@ body,
     justify-content: center;
 }
 
-.card-container {
+.card-container, .card-container2 {
     display: flex;
     flex-direction: column;
     flex: 0 0 calc(25% - 5px);

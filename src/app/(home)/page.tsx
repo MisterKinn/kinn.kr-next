@@ -51,6 +51,22 @@ const MobilePage = styled.div`
             width: 8em;
             margin-top: -1.5em;
         }
+
+        .card-container2 {
+            margin: -0.7em;
+        }
+
+        .card-title {
+            font-size: 21px;
+        }
+
+        .card-text {
+            font-size: 0.45em;
+        }
+
+        .card-footer {
+            font-size: 14px;
+        }
     }
 `;
 
@@ -447,7 +463,7 @@ function Page() {
                 <h2 className="list">Skills</h2>
                 <div className="container">
                     <div className="spec">
-                        <div className="card-container spec2">
+                        <div className="card-container2 spec2">
                             <div>
                                 <img
                                     loading="lazy"
@@ -468,7 +484,7 @@ function Page() {
                     </div>
 
                     <div className="spec">
-                        <div className="card-container spec2">
+                        <div className="card-container2 spec2">
                             <div>
                                 <img
                                     loading="lazy"
@@ -489,7 +505,7 @@ function Page() {
                     </div>
 
                     <div className="spec">
-                        <div className="card-container spec2">
+                        <div className="card-container2 spec2">
                             <div>
                                 <img
                                     loading="lazy"
@@ -512,7 +528,7 @@ function Page() {
 
                 <div className="container scoll">
                     <div className="spec">
-                        <div className="card-container spec2">
+                        <div className="card-container2 spec2">
                             <div>
                                 <img
                                     loading="lazy"
@@ -533,7 +549,7 @@ function Page() {
                     </div>
 
                     <div className="spec">
-                        <div className="card-container spec2">
+                        <div className="card-container2 spec2">
                             <div>
                                 <img
                                     loading="lazy"
@@ -566,7 +582,7 @@ function Page() {
                         title="Mail"
                         className="spec"
                     >
-                        <div className="card-container spec3">
+                        <div className="card-container2 spec3">
                             <div>
                                 <img
                                     loading="lazy"
@@ -592,7 +608,7 @@ function Page() {
                         title="Instagram"
                         className="spec"
                     >
-                        <div className="card-container spec3">
+                        <div className="card-container2 spec3">
                             <div>
                                 <img
                                     loading="lazy"
@@ -618,7 +634,7 @@ function Page() {
                         title="Discord"
                         className="spec"
                     >
-                        <div className="card-container spec3">
+                        <div className="card-container2 spec3">
                             <div>
                                 <img
                                     loading="lazy"
@@ -644,7 +660,7 @@ function Page() {
                         title="GitHub"
                         className="spec"
                     >
-                        <div className="card-container spec3">
+                        <div className="card-container2 spec3">
                             <div>
                                 <img
                                     loading="lazy"
