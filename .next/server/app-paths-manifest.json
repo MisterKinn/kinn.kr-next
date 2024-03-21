@@ -1,0 +1,13 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/devfest23-summary/page": "app/devfest23-summary/page.js",
+  "/blank/page": "app/blank/page.js",
+  "/lounge23/page": "app/lounge23/page.js",
+  "/converter/page": "app/converter/page.js",
+  "/machim/page": "app/machim/page.js",
+  "/donho/page": "app/donho/page.js",
+  "/kidmo/page": "app/kidmo/page.js",
+  "/qr/page": "app/qr/page.js",
+  "/kjs/page": "app/kjs/page.js"
+}
