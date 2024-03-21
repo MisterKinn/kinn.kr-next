@@ -61,7 +61,8 @@ body,
     justify-content: center;
 }
 
-.card-container, .card-container2 {
+.card-container,
+.card-container2 {
     display: flex;
     flex-direction: column;
     flex: 0 0 calc(25% - 5px);
@@ -150,7 +151,7 @@ body,
     margin-top: 20em;
 }
 
-.AboutMe {
+.About {
     text-align: center;
     margin-top: 5em;
     padding-top: 3em;
@@ -274,4 +275,12 @@ p {
     text-align: center;
     font-size: 25px;
     color: grey;
+}
+
+#About,
+#Portfolio,
+#Experience,
+#Skills,
+#Profile {
+    overflow-y: hidden;
 }

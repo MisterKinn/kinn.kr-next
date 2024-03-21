@@ -6,83 +6,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/kjs/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/kjs/layout.css",
-      "static/chunks/app/kjs/layout.js"
-    ],
-    "/kjs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/kjs/page.css",
-      "static/chunks/app/kjs/page.js"
-    ],
     "/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(home)/page.css",
       "static/chunks/app/(home)/page.js"
-    ],
-    "/qr/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/qr/page.css",
-      "static/chunks/app/qr/page.js"
-    ],
-    "/qr/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/qr/layout.css",
-      "static/chunks/app/qr/layout.js"
-    ],
-    "/converter/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/converter/page.css",
-      "static/chunks/app/converter/page.js"
-    ],
-    "/converter/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/converter/layout.css",
-      "static/chunks/app/converter/layout.js"
-    ],
-    "/machim/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/machim/page.css",
-      "static/chunks/app/machim/page.js"
-    ],
-    "/machim/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/machim/layout.css",
-      "static/chunks/app/machim/layout.js"
-    ],
-    "/kidmo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/kidmo/page.css",
-      "static/chunks/app/kidmo/page.js"
-    ],
-    "/kidmo/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/kidmo/layout.css",
-      "static/chunks/app/kidmo/layout.js"
-    ],
-    "/donho/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/donho/page.css",
-      "static/chunks/app/donho/page.js"
-    ],
-    "/donho/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/donho/layout.css",
-      "static/chunks/app/donho/layout.js"
     ]
   }
 }

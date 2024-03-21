@@ -3,27 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import "../../styles/style.css";
 import AOS from "aos";
 import "../../styles/aos.css";
-import styled from "styled-components";
-
-const MobileHome = styled.div`
-    @media only screen and (max-width: 800px) {
-        .hello {
-            font-size: 1.6em;
-        }
-
-        .kinn {
-            font-size: 6em;
-        }
-
-        .introduce {
-            font-size: 1.8em;
-        }
-
-        .wave {
-            margin-top: -1em;
-        }
-    }
-`;
 
 function Home() {
     const [imageSrc, setImageSrc] = useState("img/kinn-banner.png");
@@ -78,34 +57,32 @@ function Home() {
 
     return (
         <div id="home" className="body">
-            <MobileHome>
-                <img src={imageSrc} className="header-img" />
-                <div className="header-container">
-                    <h2 className="hello" data-aos="fade-up">
-                        Hello, I'm
-                    </h2>
-                    <h1 className="kinn" data-aos="fade-up">
-                        Kinn
-                    </h1>
-                    <div>
-                        <div className="introduce">
-                            Nice to meet you!
-                            <img
-                                loading="lazy"
-                                draggable="false"
-                                src="img/wave.png"
-                                className="wave"
-                            />
-                        </div>
+            <img src={imageSrc} className="header-img" />
+            <div className="header-container">
+                <h2 className="hello" data-aos="fade-up">
+                    Hello, I'm
+                </h2>
+                <h1 className="kinn" data-aos="fade-up">
+                    Kinn
+                </h1>
+                <div>
+                    <div className="introduce" data-aos="fade-up">
+                        Nice to meet you!
+                        <img
+                            loading="lazy"
+                            draggable="false"
+                            src="img/wave.png"
+                            className="wave"
+                        />
                     </div>
-                    <img
-                        loading="lazy"
-                        src="img/arrow.png"
-                        className="arrow"
-                        ref={arrowRef}
-                    />
                 </div>
-            </MobileHome>
+                <img
+                    loading="lazy"
+                    src="img/arrow.png"
+                    className="arrow"
+                    ref={arrowRef}
+                />
+            </div>
         </div>
     );
 }

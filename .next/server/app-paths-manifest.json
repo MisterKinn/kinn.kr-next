@@ -1,7 +1,3 @@
 {
-  "/(home)/page": "app/(home)/page.js",
-  "/machim/page": "app/machim/page.js",
-  "/kidmo/page": "app/kidmo/page.js",
-  "/donho/page": "app/donho/page.js",
-  "/kjs/page": "app/kjs/page.js"
+  "/(home)/page": "app/(home)/page.js"
 }
