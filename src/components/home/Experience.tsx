@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../../styles/style.css";
+import { handleExperience } from "../../app/handleText.js";
 import AOS from "aos";
 import "../../styles/aos.css";
 
@@ -9,6 +10,22 @@ function Experience() {
             duration: 1000,
         });
     }, []);
+
+    useEffect(() => {
+        handleExperience();
+
+        if (window.performance) {
+            if (performance.navigation.type === 1) {
+                // Detect Refresh
+                handleExperience();
+            }
+        }
+        window.addEventListener("resize", handleExperience);
+
+        return () => {
+            window.removeEventListener("resize", handleExperience);
+        };
+    });
 
     return (
         <div id="Experience" className="body" data-aos="fade-up">

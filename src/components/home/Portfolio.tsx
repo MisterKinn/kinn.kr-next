@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../../styles/style.css";
+import { handlePortfolio } from "../../app/handleText.js";
 import AOS from "aos";
 import "../../styles/aos.css";
 
@@ -9,6 +10,22 @@ function Portfolio() {
             duration: 1000,
         });
     }, []);
+
+    useEffect(() => {
+        handlePortfolio();
+
+        if (window.performance) {
+            if (performance.navigation.type === 1) {
+                // Detect Refresh
+                handlePortfolio();
+            }
+        }
+        window.addEventListener("resize", handlePortfolio);
+
+        return () => {
+            window.removeEventListener("resize", handlePortfolio);
+        };
+    });
 
     return (
         <div id="Portfolio" className="body">

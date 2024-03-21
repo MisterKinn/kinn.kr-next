@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../../styles/style.css";
+import { handleAboutMe } from "../../app/handleText.js";
 import AOS from "aos";
 import "../../styles/aos.css";
 
@@ -9,6 +10,22 @@ function About() {
             duration: 1000,
         });
     }, []);
+
+    useEffect(() => {
+        handleAboutMe();
+
+        if (window.performance) {
+            if (performance.navigation.type === 1) {
+                // Detect Refresh
+                handleAboutMe();
+            }
+        }
+        window.addEventListener("resize", handleAboutMe);
+
+        return () => {
+            window.removeEventListener("resize", handleAboutMe);
+        };
+    });
 
     return (
         <div id="About" className="body">

@@ -1,10 +1,5 @@
 "use client";
 import { useEffect, useRef } from "react";
-import {
-    handleAboutMe,
-    handlePortfolio,
-    handleExperience,
-} from "@/app/handleText";
 import "../../styles/style.css";
 import styled from "styled-components";
 
@@ -80,27 +75,6 @@ const MobilePage = styled.div`
 `;
 
 function Page() {
-    useEffect(() => {
-        const handleResize = () => {
-            handleAboutMe();
-            handlePortfolio();
-            handleExperience();
-        };
-        handleResize();
-
-        if (window.performance) {
-            if (performance.navigation.type === 1) {
-                // Detect Refresh
-                handleResize();
-            }
-        }
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
     const arrowRef = useRef<HTMLImageElement>(null);
 
     const scrollDown = () => {

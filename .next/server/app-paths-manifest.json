@@ -1,3 +1,13 @@
 {
-  "/(home)/page": "app/(home)/page.js"
+  "/_not-found": "app/_not-found.js",
+  "/blank/page": "app/blank/page.js",
+  "/devfest23-summary/page": "app/devfest23-summary/page.js",
+  "/lounge23/page": "app/lounge23/page.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/converter/page": "app/converter/page.js",
+  "/kjs/page": "app/kjs/page.js",
+  "/kidmo/page": "app/kidmo/page.js",
+  "/donho/page": "app/donho/page.js",
+  "/qr/page": "app/qr/page.js",
+  "/machim/page": "app/machim/page.js"
 }
