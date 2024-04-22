@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Machim",
-    description: "Official Web of Machim Bot",
+    description: "Official Web Page of Machim Bot",
     icons: {
         icon: "img/Machim.png",
     },

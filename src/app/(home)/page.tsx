@@ -1,6 +1,9 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 import "../../styles/style.css";
+import AOS from "aos";
+import "../../styles/aos.css";
 import styled from "styled-components";
 
 import TopBar from "@/components/home/TopBar";
@@ -12,6 +15,9 @@ import Skills from "@/components/home/Skills";
 import Profile from "@/components/home/Profile";
 import Banner from "@/components/home/Banner";
 import Footer from "@/components/home/Footer";
+
+import MobileHome from "@/components/home/mobile/Home";
+import MobileAbout from "@/components/home/mobile/About";
 
 const MobilePage = styled.div`
     @media only screen and (max-width: 800px) {
@@ -75,6 +81,36 @@ const MobilePage = styled.div`
 `;
 
 function Page() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
+
+    const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+
+    if (isMobile) {
+        return (
+            <div id="page">
+                <MobileHome />
+                <MobileAbout />
+            </div>
+        );
+    } else {
+        return (
+            <div id="page">
+                <TopBar />
+                <Home />
+                <About />
+                <Portfolio />
+                <Experience />
+                <Skills />
+                <Profile />
+                <Banner />
+                <Footer />
+            </div>
+        );
+    }
     return (
         <div>
             <TopBar />

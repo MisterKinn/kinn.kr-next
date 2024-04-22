@@ -1,65 +1,51 @@
-import { useEffect } from "react";
-import "../../styles/style.css";
-import { handleAboutMe } from "../../app/handleText.js";
-import AOS from "aos";
-import "../../styles/aos.css";
-
 function About() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
-
-    useEffect(() => {
-        handleAboutMe();
-
-        if (window.performance) {
-            if (performance.navigation.type === 1) {
-                // Detect Refresh
-                handleAboutMe();
-            }
-        }
-        window.addEventListener("resize", handleAboutMe);
-
-        return () => {
-            window.removeEventListener("resize", handleAboutMe);
-        };
-    });
-
     return (
         <div id="About" className="body">
             <h1 className="About" data-aos="fade-up">
                 About Me
             </h1>
-            <p className="aboutme-text" data-aos="fade-up">
-                I'm <strong>SeongYeon Kim</strong> (a.k.a.
-                <strong>Kinn</strong>),
+            <p data-aos="fade-up">
+                <span className="white">Hello!</span> My name is{" "}
+                <span className="white">SeongYeon Kim</span> (a.k.a.
+                <span className="white">Kinn</span>),
                 <br />
-                and I'm a student FrontEnd Developer.
-                <br />I develop Website & Discord Bot.
-                <br />I love{" "}
-                <img loading="lazy" src="img/usa.webp" className="usa" /> &{" "}
+                and I'm a student{" "}
+                <span className="white">FrontEnd Developer.</span>
+                <br />
+                I'm fan of{" "}
+                <img
+                    loading="lazy"
+                    src="img/usa.webp"
+                    alt="the United States of America"
+                    className="usa"
+                />{" "}
+                &{" "}
                 <a
                     href="https://f1.com"
                     target="_blank"
-                    title="F1"
+                    title="Formula 1"
                     className="link"
                 >
                     <img loading="lazy" src="img/f1.png" className="f1" />
                 </a>
                 <strong>.</strong>
                 <br />
+                <br />
                 My motto is{" "}
                 <span className="motto-text">
-                    <strong>
-                        "The best way to predict the future
+                    <span className="white">
+                        "The best way to predict
                         <br />
-                        is to create it."
-                    </strong>
+                        the future is to create it."
+                    </span>
                 </span>
                 <br />
-                I'm Junior of high school, and <br />
+                <br />
+                I'm <span className="white">18</span> years old (in Korean age),
+                <br />
+                and <span className="white">Junior</span> of high school.
+                <br />
+                <br />
                 I'm dreaming of working at{" "}
                 <a
                     href="https://toss.im"
@@ -70,9 +56,7 @@ function About() {
                     <img loading="lazy" src="img/toss.png" className="toss" />
                 </a>
                 <br />& being citizen of{" "}
-                <span className="usa-element">
-                    <strong>the United States of America.</strong>
-                </span>
+                <span className="white">the United States of America</span>.
             </p>
         </div>
     );
