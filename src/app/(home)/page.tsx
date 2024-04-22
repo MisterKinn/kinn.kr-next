@@ -75,24 +75,6 @@ const MobilePage = styled.div`
 `;
 
 function Page() {
-    const arrowRef = useRef<HTMLImageElement>(null);
-
-    const scrollDown = () => {
-        window.scrollTo({ top: 1000, behavior: "smooth" });
-    };
-
-    useEffect(() => {
-        if (arrowRef.current) {
-            arrowRef.current.addEventListener("click", scrollDown);
-        }
-
-        return () => {
-            if (arrowRef.current) {
-                arrowRef.current.removeEventListener("click", scrollDown);
-            }
-        };
-    }, [arrowRef, scrollDown]);
-
     return (
         <div>
             <TopBar />
