@@ -11,6 +11,18 @@
       "static/chunks/main-app.js",
       "static/css/app/(home)/page.css",
       "static/chunks/app/(home)/page.js"
+    ],
+    "/converter/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/converter/page.css",
+      "static/chunks/app/converter/page.js"
+    ],
+    "/converter/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/converter/layout.css",
+      "static/chunks/app/converter/layout.js"
     ]
   }
 }

@@ -1,39 +1,47 @@
-import { useEffect } from "react";
-import "../../styles/style.css";
-import { handlePortfolio } from "../../app/handleText.js";
-import AOS from "aos";
-import "../../styles/aos.css";
-
 function Portfolio() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
-
-    useEffect(() => {
-        handlePortfolio();
-
-        if (window.performance) {
-            if (performance.navigation.type === 1) {
-                // Detect Refresh
-                handlePortfolio();
-            }
-        }
-        window.addEventListener("resize", handlePortfolio);
-
-        return () => {
-            window.removeEventListener("resize", handlePortfolio);
-        };
-    });
-
     return (
         <div id="Portfolio" className="body">
             <h2 className="list" data-aos="fade-up">
                 Portfolio
             </h2>
+            <h3 className="click-card" data-aos="fade-up">
+                Click the Card to see the detail.
+            </h3>
 
             <div className="container" data-aos="fade-up">
+                <a
+                    href="https://todaylunch.vercel.app"
+                    target="_blank"
+                    title="TodayLunch"
+                    className="spec"
+                >
+                    <div className="card-container">
+                        <div>
+                            <img
+                                loading="lazy"
+                                src="img/todaylunch.png"
+                                className="card-img"
+                            />
+                            <span className="card-title">
+                                <strong> TodayLunch</strong>
+                            </span>
+                        </div>
+                        <div className="card-text">
+                            <span className="roadmap-element">
+                                Operating <strong>TodayLunch</strong> Web Page &
+                                <br /> Instagram Account, which informs school
+                                meal.
+                            </span>
+                            <div className="card-footer">
+                                <strong>
+                                    <br />
+                                    24. 04. 11~
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
                 <a
                     href="https://gmsh.kr"
                     target="_blank"
@@ -54,9 +62,9 @@ function Portfolio() {
                         <div className="card-text">
                             <span className="roadmap-element">
                                 Operating <strong>RoadMap</strong>
-                                ,
+                                , which is
                                 <br />
-                                which is Web Club of my high school.
+                                Web Development Club of my school.
                             </span>
                             <div className="card-footer">
                                 <strong>
@@ -142,13 +150,13 @@ function Portfolio() {
                                 src="img/converter.png"
                                 className="card-img"
                             />
-                            <span className="card-title converter">
+                            <span className="card-title">
                                 <strong>Dynamic Converter</strong>
                             </span>
                         </div>
                         <div className="card-text">
                             <span className="converter-element">
-                                Making an
+                                Making an{" "}
                                 <strong>
                                     Exchange Rate Conversion Service
                                 </strong>
@@ -180,14 +188,14 @@ function Portfolio() {
                                 className="card-img"
                             />
                             <span className="card-title">
-                                <strong>Promise</strong>
+                                <strong> Promise</strong>
                             </span>
                         </div>
                         <div className="card-text">
-                            Made a official Web Page <strong>Promise</strong>
-                            ,
+                            Made a official Web Page of <strong>Promise</strong>
+                            , which was
                             <br />
-                            which was Web Club of my high school.
+                            Web Development Club of my high school.
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -212,13 +220,14 @@ function Portfolio() {
                                 className="card-img"
                             />
                             <span className="card-title">
-                                <strong>.마침이</strong>
+                                <strong> .마침이</strong>
                             </span>
                         </div>
                         <div className="card-text">
-                            Making My Own <strong>Discord Bot</strong>,
+                            Making My Own <strong>Discord Bot</strong>, which
+                            has
                             <br />
-                            <strong>[ .마침이 ]</strong>.
+                            server management & utility features.
                             <div className="card-footer">
                                 <strong>
                                     <br />

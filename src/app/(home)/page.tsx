@@ -18,6 +18,7 @@ import Footer from "@/components/home/Footer";
 
 import MobileHome from "@/components/home/mobile/Home";
 import MobileAbout from "@/components/home/mobile/About";
+import MobilePortfolio from "@/components/home/mobile/Portfolio";
 
 const MobilePage = styled.div`
     @media only screen and (max-width: 800px) {
@@ -94,6 +95,7 @@ function Page() {
             <div id="page">
                 <MobileHome />
                 <MobileAbout />
+                <MobilePortfolio />
             </div>
         );
     } else {

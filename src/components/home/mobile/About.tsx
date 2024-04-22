@@ -14,7 +14,6 @@ function About() {
                 <br />
                 <span className="white">FrontEnd Developer.</span>
                 <br />
-                <br />
                 I'm fan of{" "}
                 <img
                     loading="lazy"
