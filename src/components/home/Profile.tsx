@@ -1,15 +1,4 @@
-import { useEffect } from "react";
-import "../../styles/style.css";
-import AOS from "aos";
-import "../../styles/aos.css";
-
 function Profile() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
-
     return (
         <div id="Profile" className="body" data-aos="fade-up">
             <h2 id="Profile" className="list">
@@ -30,7 +19,7 @@ function Profile() {
                                 className="card-img"
                             />
                             <span className="card-title">
-                                <strong>Mail</strong>
+                                <strong> Mail</strong>
                             </span>
                             <div className="card-footer">
                                 <strong>
@@ -56,7 +45,7 @@ function Profile() {
                                 className="card-img"
                             />
                             <span className="card-title">
-                                <strong>Instagram</strong>
+                                <strong> Instagram</strong>
                             </span>
                             <div className="card-footer">
                                 <strong>
@@ -82,7 +71,7 @@ function Profile() {
                                 className="card-img discord"
                             />
                             <span className="card-title">
-                                <strong>Discord</strong>
+                                <strong> Discord</strong>
                             </span>
                             <div className="card-footer">
                                 <strong>
@@ -108,7 +97,7 @@ function Profile() {
                                 className="card-img discord"
                             />
                             <span className="card-title">
-                                <strong>Github</strong>
+                                <strong> Github</strong>
                             </span>
                             <div className="card-footer">
                                 <strong>

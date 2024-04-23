@@ -1,15 +1,4 @@
-import { useEffect } from "react";
-import "../../styles/style.css";
-import AOS from "aos";
-import "../../styles/aos.css";
-
 function Skills() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
-
     return (
         <div id="Skills" className="body" data-aos="fade-up">
             <h2 className="list">Skills</h2>

@@ -1,12 +1,4 @@
 import { useEffect, useRef } from "react";
-import styled from "styled-components";
-
-styled.p`
-    font-family: "Verdana";
-    text-align: center;
-    font-size: 25px;
-    color: grey;
-`;
 
 function Footer() {
     const yearRef = useRef<HTMLSpanElement>(null);
@@ -17,8 +9,9 @@ function Footer() {
             yearElement.textContent = new Date().getFullYear().toString();
         }
     }, []);
+
     return (
-        <div id="footer" className="body">
+        <div>
             <p>
                 &copy; <span id="copyright-year" ref={yearRef} />{" "}
                 <strong>Kinn</strong>. All Rights Reserved.
