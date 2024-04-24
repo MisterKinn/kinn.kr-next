@@ -6,7 +6,7 @@ function Experience() {
             <div className="container">
                 <a href=" " target="_blank" title="Ileonang" className="spec">
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/trophy.png"

@@ -16,7 +16,7 @@ function Portfolio() {
                     className="spec"
                 >
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/todaylunch.png"
@@ -49,7 +49,7 @@ function Portfolio() {
                     className="spec"
                 >
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/road-map.png"
@@ -78,7 +78,7 @@ function Portfolio() {
 
                 <a href=" " target="_blank" title="Ileonang" className="spec">
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/ileonang.png"
@@ -109,7 +109,7 @@ function Portfolio() {
                     className="spec"
                 >
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/link.png"
@@ -144,7 +144,7 @@ function Portfolio() {
                     className="spec"
                 >
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/converter.png"
@@ -181,7 +181,7 @@ function Portfolio() {
                     className="spec"
                 >
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/Promise.webp"
@@ -213,7 +213,7 @@ function Portfolio() {
                     className="spec"
                 >
                     <div className="card-container">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/Machim.png"

@@ -1,12 +1,14 @@
 function Experience() {
     return (
         <div id="Experience">
-            <h2 className="mobile-list" data-aos="fade-up">Experience</h2>
+            <h2 className="mobile-list" data-aos="fade-up">
+                Experience
+            </h2>
 
             <div className="container">
                 <span className="spec">
                     <div className="mobile-card-container" data-aos="fade-up">
-                        <div>
+                        <div className="column-center">
                             <img
                                 loading="lazy"
                                 src="img/trophy.png"

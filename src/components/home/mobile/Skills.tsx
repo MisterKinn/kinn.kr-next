@@ -1,20 +1,24 @@
 function Skills() {
     return (
         <div id="Skills">
-            <h2 className="mobile-list" data-aos="fade-up">Skills</h2>
+            <h2 className="mobile-list" data-aos="fade-up">
+                Skills
+            </h2>
 
             <div className="container" data-aos="fade-up">
                 <div className="spec">
                     <div className="card-container2 spec2">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/html.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong>HTML</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/html.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>HTML</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -28,14 +32,16 @@ function Skills() {
                 <div className="spec">
                     <div className="card-container2 spec2">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/css.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong>CSS</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/css.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>CSS</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -49,14 +55,16 @@ function Skills() {
                 <div className="spec">
                     <div className="card-container2 spec2">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/js.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong>JavaScript</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/js.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>JavaScript</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -72,14 +80,16 @@ function Skills() {
                 <div className="spec">
                     <div className="card-container2 spec2">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/React.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong>React</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/React.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>React</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -93,14 +103,16 @@ function Skills() {
                 <div className="spec">
                     <div className="card-container2 spec2">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/Nextjs.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong>Next.JS</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/Nextjs.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong>Next.JS</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />

@@ -103,6 +103,13 @@ body {
     padding: 24px;
 }
 
+.column-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
 .card-img {
     height: 50px;
     width: 50px;

@@ -13,14 +13,16 @@ function Profile() {
                 >
                     <div className="card-container2 spec3">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/mail.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong> Mail</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/mail.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong> Mail</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -32,21 +34,23 @@ function Profile() {
                 </a>
 
                 <a
-                    href="https://www.instagram.com/kinn__sy/"
+                    href="https://www.instagram.com/kinn__sy"
                     target="_blank"
                     title="Instagram"
                     className="spec"
                 >
                     <div className="card-container2 spec3">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/instagram.png"
-                                className="card-img"
-                            />
-                            <span className="card-title">
-                                <strong> Instagram</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/instagram.png"
+                                    className="card-img"
+                                />
+                                <span className="card-title">
+                                    <strong> Instagram</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -65,14 +69,16 @@ function Profile() {
                 >
                     <div className="card-container2 spec3">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/discord.png"
-                                className="card-img discord"
-                            />
-                            <span className="card-title">
-                                <strong> Discord</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/discord.png"
+                                    className="card-img discord"
+                                />
+                                <span className="card-title">
+                                    <strong> Discord</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
@@ -84,21 +90,23 @@ function Profile() {
                 </a>
 
                 <a
-                    href="https://github.com/MisterKinn/"
+                    href="https://github.com/MisterKinn"
                     target="_blank"
                     title="GitHub"
                     className="spec"
                 >
                     <div className="card-container2 spec3">
                         <div>
-                            <img
-                                loading="lazy"
-                                src="img/github.png"
-                                className="card-img discord"
-                            />
-                            <span className="card-title">
-                                <strong> Github</strong>
-                            </span>
+                            <div className="column-center">
+                                <img
+                                    loading="lazy"
+                                    src="img/github.png"
+                                    className="card-img discord"
+                                />
+                                <span className="card-title">
+                                    <strong> Github</strong>
+                                </span>
+                            </div>
                             <div className="card-footer">
                                 <strong>
                                     <br />
