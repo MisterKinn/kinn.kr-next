@@ -1,0 +1,192 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/machim.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "__Inter_aaf875", "__Inter_Fallback_aaf875";
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hello-world {
+    margin: 0.5em;
+    font-size: 110px;
+    color: white;
+}
+
+.join {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    height: 3em;
+    width: 10em;
+    margin: 0.25em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #333333;
+    text-decoration: none;
+    font-size: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.join:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.banner {
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me {
+    text-align: center;
+    margin-top: 11em;
+    padding-top: 3em;
+    font-size: 50px;
+    color: #0064ff;
+}
+
+.about-machim {
+    text-align: center;
+    font-size: 25px;
+    color: grey;
+}
+
+.center {
+    text-align: center;
+}
+
+.list {
+    text-align: center;
+    padding-right: 70%;
+    margin-top: 15%;
+    padding-top: 3em;
+    font-size: 50px;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 50px;
+    color: #0064ff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(25% - 5px);
+    height: 10em;
+    width: 18em;
+    gap: 30px;
+    background-color: #1c1c1c;
+    box-shadow: 0px 2px 4px rbga(0, 0, 0, 0, 3);
+    border-radius: 16px;
+    margin: 10px;
+    padding: 24px;
+}
+
+.card-img {
+    height: 50px;
+    width: 50px;
+}
+
+.card-title {
+    font-size: 30px;
+    color: white;
+}
+
+.card-text {
+    text-align: left;
+    font-size: 1em;
+    color: grey;
+}
+
+.card-footer {
+    font-size: 17px;
+    color: white;
+}
+
+.spec {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.spec2 {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    height: 10em;
+    width: 7em;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/navbar.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+#nav-bar {
+    position: fixed;
+    top: -0.4em;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1c1c1c;
+}
+
+.nav-link {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    height: 100%;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-link.active {
+    background-color: #04aa6d;
+    color: white;
+}
+

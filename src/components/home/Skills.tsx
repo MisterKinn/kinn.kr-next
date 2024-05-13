@@ -1,6 +1,6 @@
 function Skills() {
     return (
-        <div id="Skills" className="body" data-aos="fade-up">
+        <div id="Skills" data-aos="fade-up">
             <h2 className="list">Skills</h2>
             <div className="container">
                 <div className="spec">

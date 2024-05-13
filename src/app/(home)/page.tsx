@@ -5,7 +5,7 @@ import "../../styles/style.css";
 import AOS from "aos";
 import "../../styles/aos.css";
 
-import TopBar from "@/components/home/TopBar";
+import NavBar from "@/components/home/NavBar";
 import Home from "@/components/home/Home";
 import About from "@/components/home/About";
 import Portfolio from "@/components/home/Portfolio";
@@ -23,7 +23,6 @@ import MobileSkills from "@/components/home/mobile/Skills";
 import MobileProfile from "@/components/home/mobile/Profile";
 import MobileBanner from "@/components/home/mobile/Banner";
 import MobileFooter from "@/components/home/mobile/Footer";
-
 
 function Page() {
     useEffect(() => {
@@ -50,7 +49,7 @@ function Page() {
     } else {
         return (
             <div id="page">
-                <TopBar />
+                <NavBar />
                 <Home />
                 <About />
                 <Portfolio />

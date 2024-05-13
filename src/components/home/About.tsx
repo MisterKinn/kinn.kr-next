@@ -1,6 +1,6 @@
 function About() {
     return (
-        <div id="About" className="body">
+        <div id="About">
             <h1 className="About" data-aos="fade-up">
                 About Me
             </h1>

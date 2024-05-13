@@ -5,7 +5,7 @@ nextjs-portal {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Verdana";
+    font-family: "__Inter_aaf875", "__Inter_Fallback_aaf875";
     background-color: black;
     position: relative;
     overflow-x: hidden;

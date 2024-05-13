@@ -1,6 +1,6 @@
 function Profile() {
     return (
-        <div id="Profile" className="body" data-aos="fade-up">
+        <div id="Profile" data-aos="fade-up">
             <h2 id="Profile" className="list">
                 Profile
             </h2>

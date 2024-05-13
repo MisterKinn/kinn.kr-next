@@ -11,6 +11,18 @@
       "static/chunks/main-app.js",
       "static/css/app/(home)/page.css",
       "static/chunks/app/(home)/page.js"
+    ],
+    "/machim/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/machim/layout.css",
+      "static/chunks/app/machim/layout.js"
+    ],
+    "/machim/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/machim/page.css",
+      "static/chunks/app/machim/page.js"
     ]
   }
 }

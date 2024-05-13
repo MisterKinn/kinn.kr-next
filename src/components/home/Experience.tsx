@@ -1,6 +1,6 @@
 function Experience() {
     return (
-        <div id="Experience" className="body" data-aos="fade-up">
+        <div id="Experience" data-aos="fade-up">
             <h2 className="list">Experience</h2>
 
             <div className="container">

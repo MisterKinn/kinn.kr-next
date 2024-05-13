@@ -1,6 +1,6 @@
 function Portfolio() {
     return (
-        <div id="Portfolio" className="body">
+        <div id="Portfolio">
             <h2 className="list" data-aos="fade-up">
                 Portfolio
             </h2>
