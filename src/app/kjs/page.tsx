@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { handleKjs } from "../handleText.js";
 import "../../styles/kjs.css";
 import Banner from "../../components/home/Banner";
 import Footer from "../../components/home/Footer";
@@ -51,27 +50,6 @@ function Kjs() {
     const orgnImagePath = "img/kjs-title.jpeg";
     const mobileImagePath = "img/kjs-title-mobile.jpeg";
     const [imgElement, changeImgElement] = useState(orgnImagePath);
-
-    useEffect(() => {
-        const replaceImage = () => {
-            if (window.innerWidth <= 800) {
-                changeImgElement(mobileImagePath);
-            } else {
-                changeImgElement(orgnImagePath);
-            }
-            handleKjs();
-        };
-        replaceImage();
-
-        if (window.performance) {
-            if (performance.navigation.type === 1) {
-                // Detect Refresh
-                replaceImage();
-            }
-        }
-
-        window.addEventListener("resize", replaceImage);
-    }, []);
 
     return (
         <div>
