@@ -1,6 +1,5 @@
 import "../../styles/machim.css";
 import React, { useEffect } from "react";
-import { handleAboutMachim } from "../../app/handleText";
 import styled from "styled-components";
 
 const MobileAboutMachim = styled.div`
@@ -12,17 +11,6 @@ const MobileAboutMachim = styled.div`
 `;
 
 function AboutMachim() {
-    useEffect(() => {
-        if (window.performance) {
-            if (performance.navigation.type === 1) {
-                // Detect Refresh
-                handleAboutMachim();
-            }
-        }
-
-        window.addEventListener("resize", handleAboutMachim);
-    }, []);
-
     return (
         <div id="AboutMe" className="body">
             <MobileAboutMachim>
