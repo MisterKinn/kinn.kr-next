@@ -8,36 +8,44 @@ function NavBar() {
                 <div></div>
 
                 <div className="topnav">
-                    <Link href="../#Home" className="nav-link" scroll={true}>
+                    <Link
+                        href="/machim/#Home"
+                        className="nav-link"
+                        scroll={true}
+                    >
                         <strong>Home</strong>
                     </Link>
 
-                    <Link href="../#About" className="nav-link" scroll={true}>
+                    <Link
+                        href="/machim/#About"
+                        className="nav-link"
+                        scroll={true}
+                    >
                         <strong>About</strong>
                     </Link>
 
                     <Link
-                        href="../#Portfolio"
+                        href="/machim/#Manage"
                         className="nav-link"
                         scroll={true}
                     >
-                        <strong>Portfolio</strong>
+                        <strong>Manage</strong>
                     </Link>
 
                     <Link
-                        href="../#Experience"
+                        href="/machim/#Utility"
                         className="nav-link"
                         scroll={true}
                     >
-                        <strong>Experience</strong>
+                        <strong>Utility</strong>
                     </Link>
 
-                    <Link href="../#Skills" className="nav-link" scroll={true}>
-                        <strong>Skills</strong>
-                    </Link>
-
-                    <Link href="../#Profile" className="nav-link" scroll={true}>
-                        <strong>Profile</strong>
+                    <Link
+                        href="/machim/#Support"
+                        className="nav-link"
+                        scroll={true}
+                    >
+                        <strong>Support</strong>
                     </Link>
                 </div>
             </nav>

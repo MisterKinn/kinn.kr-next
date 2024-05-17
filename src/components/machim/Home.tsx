@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div id="home">
+        <div id="home" data-aos="fade-up">
             <h1 className="hello-world">Machim Help</h1>
 
             <div className="center">

@@ -1,6 +1,6 @@
 function Banner() {
     return (
-        <div id="banner" className="body">
+        <div id="Banner">
             <a href="https://kinn.kr/" target="_blank" title="Kinn's Lounge">
                 <img
                     loading="lazy"
