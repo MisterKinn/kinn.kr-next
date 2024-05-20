@@ -30,6 +30,14 @@ function Profile() {
                                 </strong>
                             </div>
                         </div>
+
+                        <div className="overlay">
+                            <div className="profile-overlay-text">
+                                Click the Card
+                                <br />
+                                to Mail me
+                            </div>
+                        </div>
                     </div>
                 </a>
 
@@ -56,6 +64,16 @@ function Profile() {
                                     <br />
                                     kinn__sy
                                 </strong>
+                            </div>
+                        </div>
+
+                        <div className="overlay">
+                            <div className="profile-overlay-text">
+                                Click the Card
+                                <br />
+                                to learn more
+                                <br />
+                                about Instagram
                             </div>
                         </div>
                     </div>
@@ -86,6 +104,16 @@ function Profile() {
                                 </strong>
                             </div>
                         </div>
+
+                        <div className="overlay">
+                            <div className="profile-overlay-text">
+                                Click the Card
+                                <br />
+                                to learn more
+                                <br />
+                                about Discord
+                            </div>
+                        </div>
                     </div>
                 </a>
 
@@ -104,7 +132,7 @@ function Profile() {
                                     className="card-img discord"
                                 />
                                 <span className="card-title">
-                                    <strong> Github</strong>
+                                    <strong> GitHub</strong>
                                 </span>
                             </div>
                             <div className="card-footer">
@@ -112,6 +140,16 @@ function Profile() {
                                     <br />
                                     MisterKinn
                                 </strong>
+                            </div>
+                        </div>
+
+                        <div className="overlay">
+                            <div className="profile-overlay-text">
+                                Click the Card
+                                <br />
+                                to learn more
+                                <br />
+                                about GitHub
                             </div>
                         </div>
                     </div>

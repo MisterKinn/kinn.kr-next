@@ -32,12 +32,23 @@ function Portfolio() {
                                 <br /> Instagram Account, which informs school
                                 meal.
                             </span>
+
                             <div className="card-footer">
                                 <strong>
                                     <br />
                                     24. 04. 11~
                                 </strong>
                             </div>
+                        </div>
+
+                        <div className="overlay">
+                            <span>
+                                Click the Card
+                                <br />
+                                to learn more
+                                <br />
+                                about TodayLunch
+                            </span>
                         </div>
                     </div>
                 </a>
@@ -73,11 +84,17 @@ function Portfolio() {
                                 </strong>
                             </div>
                         </div>
+
+                        <div className="overlay">
+                            <span>
+                                Click the Card to learn more about RoadMap
+                            </span>
+                        </div>
                     </div>
                 </a>
 
-                <a href=" " target="_blank" title="Ileonang" className="spec">
-                    <div className="card-container">
+                <span className="spec">
+                    <div className="card-container spec">
                         <div className="column-center">
                             <img
                                 loading="lazy"
@@ -100,7 +117,7 @@ function Portfolio() {
                             </div>
                         </div>
                     </div>
-                </a>
+                </span>
 
                 <a
                     href="/qr"
@@ -133,6 +150,10 @@ function Portfolio() {
                                     23. 12. 08~
                                 </strong>
                             </div>
+                        </div>
+
+                        <div className="overlay">
+                            <span>Click the Card to use QR Crafter</span>
                         </div>
                     </div>
                 </a>
@@ -171,6 +192,10 @@ function Portfolio() {
                                 </strong>
                             </div>
                         </div>
+
+                        <div className="overlay">
+                            <span>Click the Card to use Dynamic Converter</span>
+                        </div>
                     </div>
                 </a>
 
@@ -203,6 +228,12 @@ function Portfolio() {
                                 </strong>
                             </div>
                         </div>
+
+                        <div className="overlay">
+                            <span>
+                                Click the Card to learn more about RoadMap
+                            </span>
+                        </div>
                     </div>
                 </a>
 
@@ -234,6 +265,12 @@ function Portfolio() {
                                     21. 02. 07~
                                 </strong>
                             </div>
+                        </div>
+
+                        <div className="overlay">
+                            <span>
+                                Click the Card to learn more about .마침이
+                            </span>
                         </div>
                     </div>
                 </a>
