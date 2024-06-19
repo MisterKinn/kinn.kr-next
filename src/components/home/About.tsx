@@ -33,11 +33,7 @@ function About() {
                 <br />
                 My motto is{" "}
                 <span className="motto-text">
-                    <span className="white">
-                        "The best way to predict
-                        <br />
-                        the future is to create it."
-                    </span>
+                    <span className="white">"TRY TO BE USEFUL"</span>.
                 </span>
                 <br />
                 <br />
